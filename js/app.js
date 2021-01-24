@@ -26,7 +26,7 @@ $(document).ready(function() {
     .then(countryResults)
     .catch(failedResults);
   };
-
+// Catch Function
   function failedResults() {
     const results = document.getElementById('search-results');
     const query = document.getElementById('country-name').value;
@@ -36,27 +36,30 @@ $(document).ready(function() {
     if(query === 'WAKANDA')
     results.innerHTML = `<img src="media/king.gif" class="responsive-img"><p>Long live the King! Wakanda Forevah!</p>`
   }
-
-
+// Then Function
   function countryResults(data) {
     const results = document.getElementById('search-results');
+    const clear = document.getElementById('country-name');
 
+    // Clearing the search bar
+    clear.value='';
+    // Displaying the results
     results.innerHTML = `    
-  <div class="row">
-      <div class="col s12 m4">
-        <div class="card-panel grey lighten-2 center-align">
-            <img id="flag" src="${data.countryInfo.flag}" class="responsive-img">
+    <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel grey lighten-2 center-align">
+              <img id="flag" src="${data.countryInfo.flag}" class="responsive-img">
+          </div>
         </div>
-      </div>
 
-      <div class="col s12 m8">
-        <div class="card-panel center-align">
-            <h4>${data.country} (${data.countryInfo.iso2})</h4>
-            <h6 class="center-align"><i>${data.continent} | Population: ${data.population.toLocaleString("en")}</i></h6>
-            <div style="height: 10px;"></div>
+        <div class="col s12 m8">
+          <div class="card-panel center-align">
+              <h4>${data.country} (${data.countryInfo.iso2})</h4>
+              <h6 class="center-align"><i>${data.continent} | Population: ${data.population.toLocaleString("en")}</i></h6>
+              <div style="height: 10px;"></div>
+          </div>
         </div>
-      </div>
-  </div>
+    </div>
 
     <div class="row">
       <div class="col s12 m3">
@@ -82,7 +85,7 @@ $(document).ready(function() {
   `
   };
 
-
+// Load Function
   function loadPage() {
   const form = document.getElementById('search-form');
   form.addEventListener('submit', getCountry);
