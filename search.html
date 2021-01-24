@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Web Icon -->
+    <link rel="shortcut icon" href="media/webLogo.png" type="image/x-icon">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/dbdd28d96d.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Covid-19 Tracker</title>
+</head>
+
+<body>  
+<!-- Nav bar -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo">Covid <span style="font-weight: bolder;">Tracker</span></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="search.html">Track</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                <a data-target="mobile-menu" class="right sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+      </div>
+
+<!-- Side-nav -->
+    <ul id="mobile-menu" class="sidenav">
+        <div style="height: 100px;"></div>
+            <li><a href="index.html"><i class="material-icons">add_to_home_screen</i>Home</a></li>
+            <li><a href="search.html"><i class="material-icons">search</i>Track</a></li>
+            <li><a href="about.html"><i class="material-icons">person_search</i>About Us</a></li>
+    </ul>
+
+<div style="height: 25px;"></div>
+          <!-- Search bar -->
+        <div class="container row">
+          <div class="col s12 m12 l12">
+            <form id="search-form">
+              <input type="text" id="country-name" class="center" placeholder="Search a Country">
+            </form>
+          </div>
+        </div>
+
+<section class="grey lighten-3">
+    <div style="height: 35px;"></div>
+  <!-- Search results -->
+  <div class="container" id="search-results">
+    <div class="col s12 l6 offset-l2">
+      <div id="photography" class="col s12">
+        <p class="flow-text red-text" style="font-weight: bold;">Welcome to Data Tracker Page</p>
+        <p class="center-align">Input a country name at the search bar above to start tracking its latest Covid-19 cases. <br> Data will include the country's total number of cases, number of active cases, number of deaths as well as its recoveries.</p>    
+        <br>
+        <p class="center-align"><i>Data API used is from <a href="https://disease.sh/" target="_blank">disease.sh - Open Disease Data</i></a></p>    
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 35px;"></div>
+</section>
+
+<div style="height: 100px;"></div>
+
+<!-- Footer -->
+<footer class="page-footer">
+      <div class="row container">
+        <div class="col s12 l6">
+            <h5>Stay Connected</h5>
+          <p class="white-text">For feedbacks and contact, you may send an email at <u>darwinalbos2124@gmail.com</u></p>
+          <p class="white-text">Kindly clone properly and pull a request on my Github repository if you wish to contribute.</p>
+        </div>
+        <div class="col s12 l4 offset-l2">
+          <h5 class="white-text">Other Platforms</h5>
+          <ul><u>
+            <li><a class="white-text" target ="_blank" href="https://github.com/darwinalbos24">Github Account</a></li>
+            <li><a class="white-text" target ="_blank" href="https://app.netlify.com/teams/darwinalbos24/overview">Netlify</a></li>
+            <li><a class="white-text" target ="_blank" href="https://www.facebook.com/durwinard">Facebook Account</a></li>
+          </u></ul>
+        </div>
+      </div>
+    <div class="footer-copyright">
+      <div class="container center-align">
+      © 2021 - All Rights Reserved | Developed by Darwin Albos
+      </div>
+    </div>
+  </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

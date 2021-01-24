@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: white;
+}
+
+.sidenav {
+    background-color: red;
+}
+
+.sidenav li a {
+    color: white;
+}
+
+.sidenav li>a>i.material-icons {
+    color: white;
+}
+
+nav a {
+    color: red;
+}
+
+nav .brand-logo {
+    font-size: 1.7rem;
+    color: red;
+}
+
+nav ul a {
+    color: red;
+    font-weight: 600;
+}
+
+.carousel .indicators .indicator-item {
+    width: 12px;
+    height: 12px;
+}
+
+.carousel .indicators .indicator-item.active {
+    background-color: red;
+}
+
+section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.card-panel {
+    border-radius: 15px;
+}
+
+.card-panel p {
+    text-align: justify;
+}
+
+.strain {
+    border-radius: 42%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.page-footer {
+    background-color: red;
+}
+
+h5 {
+    text-align: justify;
+}
+
+h6 {
+    text-align: justify;
+}
+
+input:focus {
+    border-bottom: 1px solid red !important;
+    box-shadow: 0 1px 0 0 red !important;
+  }
+
+#flag {
+    width: auto;
+    height: auto;
+    max-width: 65%;
+  }
+
