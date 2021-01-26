@@ -11,10 +11,6 @@ $(document).ready(function() {
         fullWidth: true,
         indicators: true
       }); 
-      
-    setInterval( ()=> {
-        $('.carousel').carousel('next');
-      }, 4000);
   });
 
 // Fetch API
