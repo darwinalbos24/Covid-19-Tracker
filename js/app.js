@@ -25,12 +25,9 @@ $(document).ready(function() {
 // Catch Function
   function failedResults() {
     const results = document.getElementById('search-results');
-    const query = document.getElementById('country-name').value;
-
-    results.innerHTML = `<h4>Sorry, we cannot identify your input. Please try again.</h4>`
-// Easteregg
-    if(query === 'WAKANDA')
-    results.innerHTML = `<img src="media/king.gif" class="responsive-img"><p>Long live the King! Wakanda Forevah!</p>`
+    
+      results.innerHTML = `<h4>Sorry, we cannot identify your input. Please try again.</h4>`
+    
   }
 // Then Function
   function countryResults(data) {
